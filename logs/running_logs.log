@@ -1,0 +1,258 @@
+[2023-05-28 21:00:38,651: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-05-28 21:00:38,656: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:00:38,664: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:00:38,666: INFO: common: created directory at: artifacts]
+[2023-05-28 21:00:38,667: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-05-28 21:00:45,770: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2CA2:1215:191BB2:1E271D:647373A2
+Accept-Ranges: bytes
+Date: Sun, 28 May 2023 15:30:43 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10228-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1685287843.535828,VS0,VE1402
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+X-Fastly-Request-ID: cd3564105ae6b5d7c8b4f228d61d9712700d8dca
+Expires: Sun, 28 May 2023 15:35:43 GMT
+Source-Age: 1
+
+]
+[2023-05-28 21:00:45,960: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-05-28 21:00:45,960: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-05-28 21:00:45,964: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:00:45,967: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:00:45,969: INFO: common: created directory at: artifacts]
+[2023-05-28 21:00:45,969: INFO: common: created directory at: artifacts/data_validation]
+[2023-05-28 21:00:45,969: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-05-28 21:00:45,969: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-05-28 21:00:45,973: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:00:45,976: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:00:45,978: INFO: common: created directory at: artifacts]
+[2023-05-28 21:00:45,978: INFO: common: created directory at: artifacts/data_transformation]
+[2023-05-28 21:00:59,296: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-05-28 21:00:59,296: INFO: main: *******************]
+[2023-05-28 21:00:59,296: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-05-28 21:00:59,300: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:00:59,303: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:00:59,303: INFO: common: created directory at: artifacts]
+[2023-05-28 21:00:59,303: INFO: common: created directory at: artifacts/model_trainer]
+[2023-05-28 21:10:27,351: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate`: Run `pip install --upgrade accelerate`]
+Traceback (most recent call last):
+  File "D:\Python\Text-summarization\main.py", line 51, in <module>
+    model_trainer.main()
+  File "d:\python\text-summarization\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "d:\python\text-summarization\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+  File "<string>", line 111, in __init__
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\training_args.py", line 1333, in __post_init__
+    and (self.device.type != "cuda")
+         ^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\training_args.py", line 1697, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\utils\generic.py", line 54, in __get__
+    cached = self.fget(obj)
+             ^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\training_args.py", line 1613, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate`: Run `pip install --upgrade accelerate`
+[2023-05-28 21:12:15,548: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-05-28 21:12:15,550: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:12:15,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:12:15,557: INFO: common: created directory at: artifacts]
+[2023-05-28 21:12:15,557: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-05-28 21:12:15,557: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-05-28 21:12:15,731: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-05-28 21:12:15,731: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-05-28 21:12:15,736: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:12:15,736: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:12:15,736: INFO: common: created directory at: artifacts]
+[2023-05-28 21:12:15,736: INFO: common: created directory at: artifacts/data_validation]
+[2023-05-28 21:12:15,743: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-05-28 21:12:15,743: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-05-28 21:12:15,748: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:12:15,748: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:12:15,748: INFO: common: created directory at: artifacts]
+[2023-05-28 21:12:15,748: INFO: common: created directory at: artifacts/data_transformation]
+[2023-05-28 21:12:19,485: WARNING: arrow_dataset: Loading cached processed dataset at D:\Python\Text-summarization\artifacts\data_ingestion\samsum_dataset\train\cache-98843acc949da21d.arrow]
+[2023-05-28 21:12:19,838: WARNING: arrow_dataset: Loading cached processed dataset at D:\Python\Text-summarization\artifacts\data_ingestion\samsum_dataset\validation\cache-12708fe416d3fb88.arrow]
+[2023-05-28 21:12:19,982: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-05-28 21:12:19,982: INFO: main: *******************]
+[2023-05-28 21:12:19,982: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-05-28 21:12:19,986: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:12:19,986: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:12:19,986: INFO: common: created directory at: artifacts]
+[2023-05-28 21:12:19,986: INFO: common: created directory at: artifacts/model_trainer]
+[2023-05-28 21:17:15,783: ERROR: main: [enforce fail at ..\c10\core\impl\alloc_cpu.cpp:72] data. DefaultCPUAllocator: not enough memory: you tried to allocate 16777216 bytes.]
+Traceback (most recent call last):
+  File "D:\Python\Text-summarization\main.py", line 51, in <module>
+    model_trainer.main()
+  File "d:\python\text-summarization\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "d:\python\text-summarization\src\textSummarizer\conponents\model_trainer.py", line 47, in train
+    trainer.train()
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\trainer.py", line 1664, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\trainer.py", line 2007, in _inner_training_loop
+    self.optimizer.step()
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\torch\optim\lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\torch\optim\optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\optimization.py", line 463, in step
+    denom = exp_avg_sq.sqrt().add_(group["eps"])
+            ^^^^^^^^^^^^^^^^^
+RuntimeError: [enforce fail at ..\c10\core\impl\alloc_cpu.cpp:72] data. DefaultCPUAllocator: not enough memory: you tried to allocate 16777216 bytes.
+[2023-05-28 21:22:37,274: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-05-28 21:22:37,280: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:22:37,284: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:22:37,284: INFO: common: created directory at: artifacts]
+[2023-05-28 21:22:37,284: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-05-28 21:22:37,287: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-05-28 21:22:37,449: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-05-28 21:22:37,449: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-05-28 21:22:37,449: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:22:37,465: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:22:37,465: INFO: common: created directory at: artifacts]
+[2023-05-28 21:22:37,465: INFO: common: created directory at: artifacts/data_validation]
+[2023-05-28 21:22:37,465: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-05-28 21:22:37,465: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-05-28 21:22:37,465: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:22:37,481: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:22:37,481: INFO: common: created directory at: artifacts]
+[2023-05-28 21:22:37,481: INFO: common: created directory at: artifacts/data_transformation]
+[2023-05-28 21:22:41,199: WARNING: arrow_dataset: Loading cached processed dataset at D:\Python\Text-summarization\artifacts\data_ingestion\samsum_dataset\train\cache-98843acc949da21d.arrow]
+[2023-05-28 21:22:41,223: WARNING: arrow_dataset: Loading cached processed dataset at D:\Python\Text-summarization\artifacts\data_ingestion\samsum_dataset\test\cache-d85a3f171aceaf1a.arrow]
+[2023-05-28 21:22:41,669: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-05-28 21:22:41,669: INFO: main: *******************]
+[2023-05-28 21:22:41,683: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-05-28 21:22:41,686: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:22:41,691: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:22:41,691: INFO: common: created directory at: artifacts]
+[2023-05-28 21:22:41,691: INFO: common: created directory at: artifacts/model_trainer]
+[2023-05-28 21:27:51,933: ERROR: main: [enforce fail at ..\c10\core\impl\alloc_cpu.cpp:72] data. DefaultCPUAllocator: not enough memory: you tried to allocate 4194304 bytes.]
+Traceback (most recent call last):
+  File "D:\Python\Text-summarization\main.py", line 51, in <module>
+    model_trainer.main()
+  File "d:\python\text-summarization\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "d:\python\text-summarization\src\textSummarizer\conponents\model_trainer.py", line 47, in train
+    trainer.train()
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\trainer.py", line 1664, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\trainer.py", line 2007, in _inner_training_loop
+    self.optimizer.step()
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\torch\optim\lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\torch\optim\optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\optimization.py", line 463, in step
+    denom = exp_avg_sq.sqrt().add_(group["eps"])
+            ^^^^^^^^^^^^^^^^^
+RuntimeError: [enforce fail at ..\c10\core\impl\alloc_cpu.cpp:72] data. DefaultCPUAllocator: not enough memory: you tried to allocate 4194304 bytes.
+[2023-05-28 21:28:33,878: INFO: server: Started server process [7696]]
+[2023-05-28 21:28:33,879: INFO: on: Waiting for application startup.]
+[2023-05-28 21:28:33,879: INFO: on: Application startup complete.]
+[2023-05-28 21:28:33,879: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2023-05-28 21:29:34,485: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-05-28 21:29:34,487: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-05-28 21:29:34,487: INFO: common: created directory at: artifacts]
+[2023-05-28 21:29:34,492: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-05-28 21:29:34,494: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\app.py", line 41, in predict_route
+    raise e
+  File "D:\Python\Text-summarization\app.py", line 38, in predict_route
+    text = obj.predict(text)
+           ^^^^^^^^^^^^^^^^^
+  File "d:\python\text-summarization\src\textSummarizer\pipeline\prediction.py", line 13, in predict
+    tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 643, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 487, in get_tokenizer_config
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\transformers\utils\hub.py", line 417, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 112, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Python\Text-summarization\venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
